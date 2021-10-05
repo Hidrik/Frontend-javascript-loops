@@ -64,6 +64,10 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
 
 for (let i = 0; i < squares.length; i++) {
+    console.log(squares[i] * squares[i] * squares[i])
+}
+
+for (let i = 0; i < squares.length; i++) {
     squares[i] = squares[i]*squares[i]*squares[i];
 }
 console.log(squares)
