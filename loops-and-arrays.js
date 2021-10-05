@@ -16,6 +16,13 @@ for (let i = 0; i < names.length; i++) {
     console.log(names[i] + "je");
 }
 
+//kan ook zo
+
+for (let i = 0; i < names.length; i++) {
+    names[i] = names[i] + 'je';
+}
+console.log(names)
+
 // ==========================================
 // Opdracht 2
 // Schrijf een script dat ieder getal in bovenstaande array met 3 vermenigvuldigd.
@@ -34,6 +41,13 @@ for (let i = 0; i < numbers.length; i++) {
     console.log(numbers[i]*3);
 }
 
+//kan ook zo:
+
+for(let i = 0; i < numbers.length; i++) {
+    numbers[i] = numbers[i]*3
+}
+console.log(numbers)
+
 // ==========================================
 // Opdracht 3
 // Schrijf een script dat voor de maat van ieder vierkant in onderstaande array het volume uitrekent.
@@ -50,6 +64,6 @@ const squares = [30, 2, 8, 24, 11];
 // console.log(numbers) geeft: [27000, 8, 512, 13824, 1331];
 
 for (let i = 0; i < squares.length; i++) {
-    const numbers = squares[i];
-    console.log(numbers*numbers*numbers);
+    squares[i] = squares[i]*squares[i]*squares[i];
 }
+console.log(squares)
